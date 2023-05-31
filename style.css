@@ -1,0 +1,378 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#botonFijo{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+/*BARRA DE NAVEGACION */
+.navbar {
+  padding: 3px;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.imgLogoIg {
+  width: 30px;
+  height: 30px;
+  padding-left: 6px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.imgLogos {
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+
+}
+
+.imgLogoFb {
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+#ulBarraNav a::after {
+  content: "";
+  background-color: #198754;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 4px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#ulBarraNav a{
+  position: relative;
+}
+ 
+#ulBarraNav a:hover::after{
+  opacity: 0.8;
+}
+
+#ulBarraNav li:hover>a
+{
+  color: #1E581F !important;
+  cursor: pointer;
+}
+
+#ulBarraNav li:hover>i{
+  color: #1E581F !important;
+  cursor: pointer;
+}
+
+li {
+  display: inline;
+  padding-left: 2px;
+  margin-right: 50px;
+}
+
+.nav-link {
+
+  padding-left: 5px !important;
+}
+
+.nav-item {
+  padding-top: 20px;
+}
+
+#menu a {
+  font-size: 18px;
+  color: #000;
+}
+
+.carousel-inner {
+  max-height: 60rem;
+}
+
+#boton {
+  width: 75%;
+  height: 40px;
+  background-color: #198754 !important;
+  color: #FFF !important;
+  box-shadow: black !important;
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+}
+
+#boton2{
+  height: 40px;
+  width: 75%;
+  background-color: #198754 !important;
+  color: #FFF !important;
+  box-shadow: black !important;
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+}
+
+#botonBuscar {
+  width: 150px;
+  
+}
+
+@media screen and (max-width: 765px){
+  #boton {
+    font-size: 20px !important;
+    height: 65px;
+  }
+  #boton2{
+    font-size: 20px !important;
+    height: 65px;
+  }
+}  
+@media screen and (max-width: 450px){
+  #boton {
+    font-size: 15px !important;
+    height: 65px !important;
+    
+  }
+  #boton2{
+    font-size: 14px !important;
+    height: 65px;
+  }
+} 
+
+
+@media screen and (max-width: 100px) {
+  #wsp {
+    justify-content: start !important;
+    font-size: 8px !important;  
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #wsp {
+    justify-content: start !important;
+    font-size: 12px !important;
+  } 
+  #idContacto{
+    padding-top: 0 !important;    
+  }
+  #idHomepage{
+    padding-top: 0 !important;
+  }
+  #formContacto{
+    justify-content: start !important;
+  }
+  #imgContacto{
+    width: 400px;
+    height: 200px;
+    justify-content: start !important;
+  }
+  
+}
+@media screen and (max-width: 850px) {
+  #formContacto{
+    justify-content: start !important;
+  }
+}
+.option1 {
+  width: 500px;
+  height: 40px;
+}
+
+#SectionBotones {
+  background-color: #BFF8C0;
+}
+
+#eslogan {
+  color: #082409 !important;
+}
+.card{
+  box-shadow:5px 5px 15px gray;
+}
+.card:hover{
+  transform: scale(1.15);
+}
+
+#font-Nombre{
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+padding-top: 70px;
+font-size: 30px;
+}
+
+/*CONTACTO HTML*/
+#sectionContacto{
+  background-color: #E7F5E5;
+  height: 120px; 
+  border-color: #198754 !important;
+}
+#sectionContacto span{
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;  
+}
+#horariosId{
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;  
+ 
+}
+
+/*FORM CONTACTO*/
+#txtNombre{
+  width: 300px;
+  border-color: #909497;  
+}
+#txtApellido{
+  width: 300px;
+  border-color: #909497;
+}
+#txtEmail{
+  border-color: #909497;
+  /* width: 500px; */
+}
+#txtAsunto{
+  border-color: #909497;
+  width: 500px;
+}
+#txtMensaje{
+  border-color: #909497;
+  width: 500px;
+}
+#aterisco{
+  color: red;
+}
+form{
+  width: 80%;
+}
+#botonContacto{
+  width: 500px;
+  height: 35px;
+  background-color: #198754 !important;
+}
+
+.card{
+  width: 350px !important; 
+  height: 480px !important;  
+}
+#btnConsultas{
+  width: 150px;
+  height: 40px;  
+}
+
+/*VENTA HTML*/
+#botonVenta{
+  width: 100%;
+  height: 35px;  
+}
+
+#formVenta input{
+  border-color: #198754 ;
+}
+#formVenta textarea{
+  border-color: #198754 ;
+}
+/*NOSOTROS HTML*/
+@media screen and (max-width: 767px) {
+  #columnaContacto{
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  #logoFooter{
+    justify-content: start !important;
+  }
+
+  #copyright{
+    font-size: 14px;
+  }
+  #logoIndex{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0;
+  }
+  #imgFotoLogo{
+    width: 100px !important;
+    
+  }
+  #font-Nombre{
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 500px){
+ 
+  #formContacto{
+    width: 350px !important;    
+  }
+  #txtEmail{
+    /* width: 350px !important; */
+    
+  }
+  #txtAsunto{
+    width: 350px !important;
+  }
+  #botonContacto{
+    width: 350px !important;
+  }
+  #imgContacto{
+    width: 350px !important;
+    height: 300 !important;
+  }
+  #imgLogoInicio{
+    width: 50px !important;
+    justify-content: start;
+  }
+  #sectionVenta{
+    padding-left: 8px !important;
+  }
+  
+ 
+}
+#footer{
+  padding-top: 200px;
+  opacity: 1;
+}
+.family{
+  font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+}
+#formContacto input{
+  border-color: #198754 ;
+}
+#formContacto textarea{
+  border-color: #198754 ;
+}
+
+
+
