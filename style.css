@@ -1,3 +1,4 @@
+/*INDEX HTML*/
 * {
   padding: 0px;
   margin: 0px;
@@ -9,6 +10,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 2;
 }
 /*BARRA DE NAVEGACION */
 .navbar {
@@ -109,10 +111,9 @@ li {
 
 #boton {
   width: 75%;
-  height: 40px;
-  background-color: #198754 !important;
+  height: 40px;  
   color: #FFF !important;
-  box-shadow: black !important;
+  box-shadow: rgb(255, 255, 255) !important;
   font-family: 'Noto Sans Nag Mundari', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto Mono', monospace;
@@ -121,10 +122,9 @@ li {
 
 #boton2{
   height: 40px;
-  width: 75%;
-  background-color: #198754 !important;
+  width: 75%;  
   color: #FFF !important;
-  box-shadow: black !important;
+  box-shadow: #fff !important;
   font-family: 'Noto Sans Nag Mundari', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto Mono', monospace;
@@ -144,6 +144,15 @@ li {
   #boton2{
     font-size: 20px !important;
     height: 65px;
+  } 
+
+}
+@media screen and (max-width: 1999px){
+  #card-row{
+    align-items: center !important;
+  }
+  #idCard { 
+    align-items: center !important;
   }
 }  
 @media screen and (max-width: 450px){
@@ -157,8 +166,6 @@ li {
     height: 65px;
   }
 } 
-
-
 @media screen and (max-width: 100px) {
   #wsp {
     justify-content: start !important;
@@ -186,10 +193,17 @@ li {
     justify-content: start !important;
   }
   
+  
 }
 @media screen and (max-width: 850px) {
   #formContacto{
     justify-content: start !important;
+  }
+  #card-row{
+    align-items: center !important;
+  }
+  #card-row row { 
+    align-items: center !important;
   }
 }
 .option1 {
@@ -198,11 +212,13 @@ li {
 }
 
 #SectionBotones {
-  background-color: #BFF8C0;
+  background-color: #198754;
+  box-shadow: 5px 5px 15px #082409 ;
 }
 
 #eslogan {
-  color: #082409 !important;
+  color: #fff !important;
+  text-shadow: 2px 2px #000 !important;
 }
 .card{
   box-shadow:5px 5px 15px gray;
@@ -221,7 +237,21 @@ font-family: 'Rubik', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 
 padding-top: 70px;
-font-size: 30px;
+font-size: 25px;
+}
+#font-nombre2{
+  
+    font-family: 'Noto Sans Nag Mundari', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+  padding-top: 70px;
+  font-size: 25px;
+  color: #147749;
 }
 
 /*CONTACTO HTML*/
