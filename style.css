@@ -151,6 +151,13 @@ li {
     font-size: 20px !important;
     height: 65px;
   } 
+  #wsp {
+    justify-content: start !important;
+    font-size: 12px;
+  } 
+  #redes{
+    font-size: 12px !important;
+  }
 
 }
 @media screen and (max-width: 1200px){
@@ -188,12 +195,25 @@ li {
     justify-content: start !important;
     font-size: 8px !important;  
   }
+  #redes{
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 450px){
+  #wsp{
+    justify-content: start !important;
+    font-size: 10px !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  #wsp {
+  /* #wsp {
     justify-content: start !important;
     font-size: 12px !important;
+  }  */
+  #redes {    
+    font-size: 10px !important;
   } 
   #idContacto{
     padding-top: 0 !important;    
