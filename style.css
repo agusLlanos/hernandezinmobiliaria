@@ -18,6 +18,9 @@
   background-color: #f5f6f7;
 }
 
+#clase1 #navbar-toggler{
+  justify-content: end !important;
+}
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;
@@ -104,6 +107,9 @@ li {
   font-size: 18px;
   color: #000;
 }
+#menu{
+  display: block !important;
+}
 
 .carousel-inner {
   max-height: 60rem;
@@ -147,14 +153,25 @@ li {
   } 
 
 }
-@media screen and (max-width: 1999px){
-  #card-row{
-    align-items: center !important;
+@media screen and (max-width: 1200px){
+  #logoIndex{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0;
   }
-  #idCard { 
-    align-items: center !important;
+  #ulBarraNav a{
+    font-size: 18px !important;
   }
 }  
+
+@media screen and (max-width: 991px){
+  #clase1{
+    padding-top: 0px !important;
+  }
+}
+
+
+
 @media screen and (max-width: 450px){
   #boton {
     font-size: 15px !important;
@@ -225,6 +242,10 @@ li {
 }
 .card:hover{
   transform: scale(1.15);
+}
+
+.margin-card{
+  margin: auto !important;
 }
 
 #font-Nombre{
@@ -351,6 +372,9 @@ form{
     
   }
   #font-Nombre{
+    font-size: 25px !important;
+  }
+  #font-nombre2{
     font-size: 25px !important;
   }
 }
