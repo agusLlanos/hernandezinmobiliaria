@@ -30,9 +30,10 @@
 
 <body>
   <header>
+    
     <div class="container-fluid bg-success">
       <div class="row">
-        <div class="col-2 col-md-6 col-sm-1 col-xs-6 p-2 ">
+        <div class="col-2 col-md-3 col-sm-2 col-xs-6 p-2 " id="redes">
           <a href="https://www.instagram.com/agusllanos_/">
             <i class="fa-brands fa-square-instagram fa-2xl" style="color: #d3224e;"></i>
           </a>
@@ -40,46 +41,55 @@
             <i class="fa-brands fa-square-facebook fa-2xl" style="color: #33538a;"></i>
           </a>
         </div>
-        <div class=" col-10 col-md-6 col-sm-11 col-xs-6 d-flex justify-content-end" style="padding-top: 10px;" id="wsp">
+        <div class=" col-10 col-md-9 col-sm-10 col-xs-6 d-flex justify-content-end" style="padding-top: 10px;" id="wsp">          
           <a href="https://api.whatsapp.com/send/?phone=5493364395945&text&app_absent=0" class="px-1">
             <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i>
-            <span class="text-light fs-9">+549 336 4395945</span>
+            <span class="text-light fs-9 nav1">+549 336 4395945</span>
           </a>
           <a href="mailto:agustinallanos44@gmail.com">
             <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
-            <span class="text-light fs-9">hernandezinmob@gmail.com</span>
+            <span class="text-light fs-9 nav1">hernandezinmob@gmail.com</span>
           </a>
         </div>
       </div>
     </div>
   </header>
   <!--BARRA DE NAVEGACION-->
-  <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-    <div class="container-fluid">
+  <div class="containter-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand d-flex px-5" href="index.html" id="logoIndex">
-          <img src="imagenes/logo-2.png" width="150" alt="Logo de la pagina web" id="imgFotoLogo">
-          <div id="font-Nombre">INMOBILIARIA </div> <br>
-          <div style="color: #147749" id="font-Nombre">HERNÁNDEZ</div>
-        </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center fs-5 " id="ulBarraNav">
-          <li class="nav-item section__li d-flex align-items-center"><i class="fa-solid fa-house"></i><a
-              class="nav-link active " aria-current="page" href="index.html">Inicio</a> </li>
-          <li class="nav-item section__li d-flex align-items-center"><i class="fa-solid fa-sign-hanging"
-              style="color: #000000;"></i><a class="nav-link active" href="venta.html">Vender</a></li>
-          <li class="nav-item section__li d-flex align-items-center"><i class="fa-solid fa-phone-volume"></i><a
-              class="nav-link active" href="contacto.html">Contacto</a></li>
-          <li class="nav-item section__li d-flex align-items-center"><i class="fa-sharp fa-solid fa-users"></i><a
-              class="nav-link active" href="nosotros.html">Acerca de</a></li>
-        </ul>
+      <div class="row">
+        <div class="col col-xl-5 col-lg-5 col-sm-12">
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand d-flex px-5" href="index.html" id="logoIndex">
+              <img src="imagenes/logo-2.png" width="150" alt="Logo de la pagina web" id="imgFotoLogo">
+              <div id="font-Nombre">INMOBILIARIA </div> <br>
+              <div id="font-nombre2">HERNÁNDEZ</div>
+            </a>
+          </div>
+        </div>
+        <div class="col col-xl-7 col-lg-7 col-sm-12" id="clase1">
+          <div class="collapse navbar-collapse pt-5" id="navbar-toggler">
+            <ul class="navbar-nav d-flex align-items-center " id="ulBarraNav">
+              <li class="nav-item section__li d-flex align-items-center" id=""><i class="fa-solid fa-house"></i><a
+                  class="nav-link active family fs-5" aria-current="page" href="index.html" id="inicio">INICIO</a> </li>
+              <li class="nav-item section__li d-flex align-items-center"><i class="fa-solid fa-sign-hanging"
+                  style="color: #000000;"></i><a class="nav-link active family fs-5" href="venta.html">VENDER</a></li>
+              <li class="nav-item section__li d-flex align-items-center"><i class="fa-solid fa-phone-volume"></i><a
+                  class="nav-link active family fs-5" href="contacto.html">CONTACTO</a></li>
+              <li class="nav-item section__li d-flex align-items-center"><i class="fa-sharp fa-solid fa-users"></i><a
+                  class="nav-link active family fs-5" href="nosotros.html">ACERCA DE</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </nav>
+  </div>
 
-    </div>
-  </nav>
   <!-- FIN BARRA DE NAVEGACION-->
 
   <section class="container-fluid border-top border-3" id="sectionVenta" style="padding-left:200px">
