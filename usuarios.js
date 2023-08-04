@@ -224,3 +224,6 @@ btnSi.addEventListener('click', () => {
 ObtenerUsuarios();
 modal4.hide();
 })
+function agregarUsuario(){
+
+}
