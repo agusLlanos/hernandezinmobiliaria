@@ -124,16 +124,14 @@
       <div class="col">
         <table class="table table-hover table-bordered" id="tablaUsuarios">
         </table>
+        <div class="col">
+          <i class="fa-solid fa-user-plus fa-xl" style="cursor: pointer;" onclick="agregarUsuario()"></i>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- MODAL PREGUNTA PARA CONFIRMAR (to Trigger Modal) -->
-
-  <div class="text-center">
-    <!-- Button HTML (to Trigger Modal) -->
-
-  </div>
 
   <!-- Modal HTML -->
   <div id="myModal" class="modal fade">
@@ -144,7 +142,6 @@
             <i class="material-icons">&#xE5CD;</i>
           </div>
           <h4 class="modal-title w-100">Está seguro?</h4>
-
         </div>
         <div class="modal-body">
           <p>¿Realmente desea eliminar este usuario? Este proceso no se puede deshacer.</p>
@@ -158,30 +155,107 @@
   </div>
 
 <!-- MODAL CONFIRMADO (to Trigger Modal) -->
-  <div class="text-center">
-    <!-- Button HTML (to Trigger Modal) -->
-    
-  </div>
-  
+ 
   <!-- Modal HTML -->
   <div id="myModal2" class="modal fade">
-    <div class="modal-dialog modal-confirm2">
-      <div class="modal-content2">
-        <div class="modal-header2">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
           <div class="icon-box">
             <i class="material-icons">&#xE876;</i>
           </div>				
-          <h4 class="modal-title w-100">Awesome!</h4>	
+          <h4 class="modal-title w-100">Exitoso!</h4>	
         </div>
         <div class="modal-body">
-          <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+          <p class="text-center">El usuario ha sido eliminado de manera exitosa</p>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+          <button id="btnOk" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
   </div>     
+
+  <!-- MODAL guardar datos de usuario (to Trigger Modal) -->
+
+  <!-- Modal HTML -->
+  <div id="myModal3" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="icon-box">
+            <i class="material-icons">&#xE876;</i>
+          </div>				
+          <h4 class="modal-title w-100">Exitoso!</h4>	
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Se modificaron los datos del usuario de manera exitosa</p>
+        </div>
+        <div class="modal-footer">
+          <button id="btnOk" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+<!-- MODAL PREGUNTA PARA CONFIRMAR (to Trigger Modal) -->
+
+  <!-- Modal HTML -->
+  <div id="myModal4" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header flex-column">
+          <div class="icon-box">
+            <i class="material-icons">&#xE5CD;</i>
+          </div>
+          <h4 class="modal-title w-100">Está seguro?</h4>
+        </div>
+        <div class="modal-body">
+          <p>¿Realmente deseas cancelar? Puede que ser pierdan datos.</p>
+        </div>
+        <div class="modal-footer justify-content-center">          
+          <button id="btnSi" type="button" class="btn btn-danger">SI</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal PARA FORMULARIO USUARIO-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-6 pt-3 d-flex justify-content-center">
+          <form action="" style="width: 800px;" id="formContacto">
+            <input type="text" class="form-control form-control-lg mt-4" placeholder="Nombre" id="txtNom" name="nombre">
+            <input type="text" class="form-control form-control-lg mt-4" placeholder="Apellido" id="txtApe"
+              name="apellido">
+            <input type="text" class="form-control form-control-lg mt-4" placeholder="Telefono" id="txtTel"
+              name="telefono">
+            <input type="text" class="form-control form-control-lg mt-4" placeholder="Email" id="txtEmail" name="email">
+            <input type="text" class="form-control form-control-lg mt-4" placeholder="Asunto" id="txtAsunto">
+            <textarea class="form-control  form-control-lg mt-4" rows="5" id="comment" placeholder="Mensaje"></textarea>
+            <input type="submit" class="btn btn-secondary  fs-6 mt-3" id="btnContacto" value="Enviar" />
+            <!-- <button type="submit" class="btn btn-secondary  fs-6 mt-3" id="botonContacto">ENVIAR</button> -->
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!-- FIN BARRA DE NAVEGACION-->
