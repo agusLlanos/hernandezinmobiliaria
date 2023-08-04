@@ -225,5 +225,6 @@ ObtenerUsuarios();
 modal4.hide();
 })
 function agregarUsuario(){
-
+  modal4 = new bootstrap.Modal(document.getElementById('exampleModal'));
+  modal4.show(); 
 }
